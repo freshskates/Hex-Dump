@@ -13,8 +13,7 @@ getFile(): Open dialog for user to pick a file
 dump(file: str = None): Hex Dump, input file or use file that was saved
 ```
 
-<h1>Instructions</h1>
-<h2>Select your file</h2>
+<h2>Instructions</h2>
 <ul>
 <li>Git clone the repo
 <li>run the python program or import library to one of your files
