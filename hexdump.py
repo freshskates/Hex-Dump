@@ -34,7 +34,6 @@ class HexDump:
     def dump(self, file: str = None):
         file = file or self.file
         if file:
-            print("You chose {}".format(file))
             print("File Dump: {}".format(file))
             with open(file, 'rb') as f:
                 for chunk in iter(lambda: f.read(32), b''):
