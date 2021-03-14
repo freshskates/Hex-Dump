@@ -1,7 +1,8 @@
 # hexDump
 Hexadecimal Dump
 <h5>Input a file on any kind, supports images as well. Handle the hex format as you wish. Functions below.
- <br/>
+<br/>
+ 
 ```
 HexDump()
 
