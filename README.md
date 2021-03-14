@@ -21,6 +21,7 @@ dump(file: str = None): Hex Dump, input file or use file that was saved
 
 
 ```
+No Need to pip install anything
 py hexDump.py
 ```
  
