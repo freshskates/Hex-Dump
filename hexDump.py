@@ -1,3 +1,4 @@
+# Author Robert Cacho
 import binascii
 import tkinter
 from tkinter import filedialog
