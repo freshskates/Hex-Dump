@@ -1,5 +1,5 @@
 # HexDump
-<h1>Hexadecimal Dump Python Program</h1>
+<h2>Hexadecimal Dump Python Program</h2>
 <h5>Input a file on any kind, supports images as well. Handle the hex format as you wish. Functions below.
 <br/>
  
