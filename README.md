@@ -13,7 +13,7 @@ getFile(): Open dialog for user to pick a file
 dump(file: str = None): Hex Dump, input file or use file that was saved
 ```
 
-<h1>Hex Dump</h1>
+<h1>Instructions</h1>
 <h2>Select your file</h2>
 <ul>
 <li>Git clone the repo
