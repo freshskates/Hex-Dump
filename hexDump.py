@@ -11,7 +11,7 @@ class HexDump:
         self.file = file
         self.hexdump = None
 
-    def validate(self, file: str):
+    def _validate(self, file: str):
         if(file is None):
             if(self.file is None):
                 print("No File being processed, exiting.")
@@ -33,14 +33,14 @@ class HexDump:
         self.file = file.name if file else None
 
     def storeHex(self, file: str = None):
-        file = self.validate(file)
-        if(file):
+        file = self._validate(file)
+        if file:
             with open(file, 'rb') as f:
                 self.hexdump = binascii.hexlify(f.read())
 
     def dump(self, file: str = None):
-        file = self.validate(file)
-        if(file):
+        file = self._validate(file)
+        if file:
             print("You chose {}".format(file))
             print("File Dump: {}".format(file))
             with open(file, 'rb') as f:
@@ -50,6 +50,7 @@ class HexDump:
 
 
 if __name__ == '__main__':
+    # file = input("Enter File: ")
     file_dump = HexDump()
     file_dump.getFile()
     file_dump.dump()
