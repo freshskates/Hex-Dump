@@ -1,5 +1,6 @@
 # Author: Robert Cacho
 # Purpose: Library to ease file to hex manipulation
+# Library: hexdump.py
 import binascii
 import tkinter
 from tkinter import filedialog
