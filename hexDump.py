@@ -1,4 +1,4 @@
-# Author Robert Cacho
+# Author: Robert Cacho
 # Purpose: Library to ease file to hex manipulation
 import binascii
 import tkinter
