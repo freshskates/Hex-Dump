@@ -6,18 +6,9 @@ import os
 
 
 class HexDump:
-
     def __init__(self, file: str = None):
         self.file = file
         self.hexdump = None
-
-    def _validate(self, file: str):
-        if(file is None):
-            if(self.file is None):
-                print("No File being processed, exiting.")
-                return
-            file = self.file
-        return file
 
     @staticmethod
     def splitAt(word: str, n: int):
@@ -33,13 +24,13 @@ class HexDump:
         self.file = file.name if file else None
 
     def storeHex(self, file: str = None):
-        file = self._validate(file)
+        file = file or self.file
         if file:
             with open(file, 'rb') as f:
                 self.hexdump = binascii.hexlify(f.read())
 
     def dump(self, file: str = None):
-        file = self._validate(file)
+        file = file or self.file
         if file:
             print("You chose {}".format(file))
             print("File Dump: {}".format(file))
