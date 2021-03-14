@@ -6,7 +6,9 @@ Hexadecimal Dump
 <ul>
 <li>Git clone the repo
 <li>run the python program or import library to one of your files
+</ul>
+```py
+py hexDump.py
 ```
- py hexDump.py
- ```
+ 
 <img src="https://i.imgur.com/Zfa4Q3m.png"/>
